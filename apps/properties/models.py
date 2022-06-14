@@ -152,7 +152,7 @@ class Property(TimeStampedUUIDModel):
         return price_after_tax
 
 class PropertyViews(TimeStampedUUIDModel):
-    id = models.CharField(verbose_name=_("IP Address"), max_length=250)
+    ip = models.CharField(verbose_name=_("IP Address"), max_length=250)
     property = models.ForeignKey(Property, related_name="property_views", on_delete=models.CASCADE)
 
     def __str__(self):
