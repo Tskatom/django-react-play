@@ -26,7 +26,7 @@ urlpatterns = [
     path("api/v1/profile/", include("apps.profiles.urls")),
     path("api/v1/properties/", include("apps.properties.urls")),
     path("api/v1/ratings/", include("apps.ratings.urls")),
-    path("api/v1/enquires/", include("apps.enquires.urls"))
+    path("api/v1/enquiries/", include("apps.enquires.urls"))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 admin.site.site_header = "Real Estate Admin"
